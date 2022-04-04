@@ -1,0 +1,222 @@
+/* Features */
+section.features {
+    margin: 70px 0;    
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.txt-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section.features h1.feature__title {        
+    text-transform: capitalize;    
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--very-dark-blue);
+    margin-bottom: 20px;
+}
+
+section.features p.feature__desc {        
+    width: 40%;    
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+.contenido__features {
+    width: 100%;
+    margin-top: 50px;    
+}
+
+.nav__features{
+    width: 50%;    
+    margin: 0 auto;    
+    padding: 20px 0;
+    border-bottom: 1px solid var(--grayish-blue);
+}
+
+.nav__features ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav__features ul a {
+    color: var(--grayish-blue);
+    text-transform: capitalize;
+    text-decoration: none;        
+    text-align: center;
+}
+
+.nav__features ul a:hover {
+    cursor: pointer;
+    color: var(--soft-red);
+}
+
+.features__tabs {
+    margin-top: 80px;                    
+}
+
+.features__tabs .tab-1, .tab-2, .tab-3 {
+    position: relative;
+    padding: 0 0 0 100px;                    
+    width: 1200px;    
+}
+
+.show-tab-1, .show-tab-2, .show-tab-3 {
+    margin-top: 50px;
+}
+
+.show-tab-2, .show-tab-3{
+    display: none;
+}
+
+.tabs-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tabs-txt h1 {
+    color: var(--very-dark-blue);
+    font-size: 28px;
+}
+
+.tabs-txt p {
+    color: var(--grayish-blue);    
+    width: 80%;
+    font-size: 18px;
+    line-height: 150%;
+    word-spacing: 2px;
+}
+
+.tabs-txt a {    
+    color: #fff;
+    background: var(--soft-blue);
+    padding: 15px 20px;    
+    text-decoration: none;
+    width: 25%;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);    
+}
+.tabs-txt a:hover {
+    color: #fff;
+}
+
+.features__tabs .tab-1 {
+    display: grid;
+    grid-template-columns: 55% 45%;    
+    margin-right: 200px;    
+}
+
+.features__tabs .tab-1::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background: var(--soft-blue);
+}
+
+.features__tabs .tab-1::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 200px;
+    height: 300px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: var(--soft-blue);
+}
+
+.features__tabs .tab-2 {    
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-right: 200px;
+}
+
+.features__tabs .tab-2::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background: var(--soft-blue);
+}
+
+.features__tabs .tab-2::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 200px;
+    height: 300px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: var(--soft-blue);
+}
+
+.features__tabs .tab-3 {    
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-right: 190px;
+}
+
+.features__tabs .tab-3::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background: var(--soft-blue);
+}
+
+.features__tabs .tab-3::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 200px;
+    height: 300px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: var(--soft-blue);
+}
+
+.nav__features {
+    position: relative;
+}
+.nav__features #marker {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    background: var(--soft-red);
+    width: 30%;
+    height: 3px;
+    transition: all 0.3s;
+}
+
+.active-tab {
+    display: block;
+}
+
+/* fin features */
